@@ -1,5 +1,5 @@
 url: https://nodebe4.github.io
-baseurl: ""
+baseurl: 
 name: NodeBE4
 # Exclude these files from your production _site
 exclude:
