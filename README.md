@@ -8,6 +8,8 @@
 1. https://be4.herokuapp.com
 2. https://cf5.herokuapp.com
 
+自动跳转链接 [https://nodebe4.github.io](https://nodebe4.github.io)
+
 本站采用类似于reddit的版主负责制，子版的版主能自主管理。
 
 欢迎各类社会项目到这里设立子版，支持您的社区发展。
