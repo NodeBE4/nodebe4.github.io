@@ -6,7 +6,7 @@ layout: default
 <!-- <p style="font-size:10px;color:red;">论坛主网址和备用网址的本月免费小时数均已用尽，将于7月1日恢复上线，欢迎访问BE4新闻站 <a href="https://be4news.pythonanywhere.com/" target="_blank">https://be4news.pythonanywhere.com/</a> .</p> -->
 <div id="main-content" class="row row-eq-height" style="min-height: 100vh">
   <p>请选择NodeBE4论坛的两个地址之一:</p>
-  <div>
+  <div class="col-12">
     <ul>
       <li>主网址 <a href="https://be4.herokuapp.com/">https://be4.herokuapp.com/</a>.</li>
       <li>副网址 <a href="https://cf5.herokuapp.com/">https://cf5.herokuapp.com/</a>.</li>
@@ -42,14 +42,14 @@ layout: default
     {
       'name': "新闻站",
       'desc': "基于HackerNews算法排序的时事分享讨论区",
-      "url":["https://be4news.pythonanywhere.com/"],
+      "url":["https://be4news.pythonanywhere.com/","https://tiny.cc/jjumsz"],
       "background-color": "#3498DB",
       "col": 1
     },
     {
       'name': "新闻站",
-      'desc': "阅读器",
-      "url":["https://nodebe4.github.io/news"],
+      'desc': "单机版RSS阅读器",
+      "url":["https://nodebe4.github.io/news","https://git.io/JJCxH"],
       "background-color": "#4AAEEC",
       "col": 1
     },
@@ -69,9 +69,9 @@ layout: default
     },
     { 
       'name': '观点2', 
-      'desc': "观点高频版",
-      "url":["https://nodebe4.github.io/oped","https://git.io/JUJZT"],
-      "background-color": "#3A62BD",
+      'desc': "高频版(>4篇/周)",
+      "url":["https://nodebe4.github.io/oped2","https://git.io/JUJZT"],
+      "background-color": "#4E8DBE",
       "col": 2
     },
     {
@@ -130,8 +130,15 @@ layout: default
       h1.innerText = item['name']
       var d = document.createElement('div')
       d.innerText = item['desc']
+      d.style.color = '#041231'
       div.appendChild(h1)
       div.appendChild(d)
+      if (item.url[1]){
+        var d = document.createElement('div')
+        d.innerText = item.url[1] 
+        d.style.color = '#F6C36D'       
+        div.appendChild(d)
+      }
       div.style.color='white'
       div.style.width='100%'
       div.style.height='100%'
