@@ -148,7 +148,33 @@ layout: default
       div.classList.add('align-items-center')
       // div.classList.add('p-2')
       // div.classList.add('flex-fill')
+      var span = document.createElement('p')
+      span.innerText='状态'
+      span.style.color='#E4CBC3'
+      div.appendChild(span)
+      var p = test_alive(item.url[0])
+      div.appendChild(p)
     })
   })
 
+function test_alive(url){
+  var divstatus = document.createElement('p')
+  divstatus.style['font-size'] = '12px'
+  divstatus.style.color='#E4CBC3'
+  divstatus.innerText = '测试中...'
+  const base = 'https://textance.herokuapp.com/title/'
+  var fullurl = base + url
+  $.ajax({
+      url: fullurl,
+      complete: function(data) {
+        divstatus.innerText = data.responseText;
+        if (data.responseText.includes('502')){
+          divstatus.style.color='#FBB7B7'
+        }else{
+          divstatus.style.color='#B6FAC8'
+        }
+      }
+  });
+  return divstatus
+}
 </script>
