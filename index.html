@@ -1,23 +1,145 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- <meta http-equiv="Refresh" content="0; url=https://be4.herokuapp.com" /> -->
-  </head>
-  <body>
-    <p>请选择NodeBE4论坛的两个地址之一:</p>
-    <ul>
-      <li>主网址 <a href="https://be4.herokuapp.com/">https://be4.herokuapp.com/</a>.</li>
-      <li>副网址 <a href="https://cf5.herokuapp.com/">https://cf5.herokuapp.com/</a>.</li>
-      <li>BE4新闻站 （新网址）<a href="https://be4news.pythonanywhere.com/">https://be4news.pythonanywhere.com/</a></li>
-      <li>BE4新闻站 （备份网址）<a href="https://be4-news.herokuapp.com/">https://be4-news.herokuapp.com/</a></li>
-      <li>观点：优秀UP主言论跟踪<a href="https://nodebe4.github.io/opinion">https://nodebe4.github.io/opinion</a> 短链接 <a href="https://git.io/JJCxS">https://git.io/JJCxS</a> </li>
-      <li>外媒报道<a href="https://nodebe4.github.io/waimei">https://nodebe4.github.io/waimei</a> 短链接 <a href="https://git.io/JJCxX">https://git.io/JJCxX</a> </li>
-      <li>社会：公民记者实拍<a href="https://nodebe4.github.io/society">https://nodebe4.github.io/society</a> 短链接 <a href="https://git.io/JUtSx">https://git.io/JUtSx</a> </li>
-      <li>英雄<a href="https://nodebe4.github.io/hero">https://nodebe4.github.io/hero</a> 短链接 <a href="https://git.io/JUt9v">https://git.io/JUt9v</a> </li>
-      <li>BE4新闻站-阅读器<a href="https://nodebe4.github.io/news">https://nodebe4.github.io/news</a> 短链接 <a href="https://git.io/JJCxH">https://git.io/JJCxH</a> </li>
-    </ul>
+---
+layout: default
+---
 
-    <p>短链接分享 <a href="https://git.io/JJCx0">https://git.io/JJCx0</a> </p>
-    <!-- <p style="font-size:10px;color:red;">论坛主网址和备用网址的本月免费小时数均已用尽，将于7月1日恢复上线，欢迎访问BE4新闻站 <a href="https://be4news.pythonanywhere.com/" target="_blank">https://be4news.pythonanywhere.com/</a> .</p> -->
-  </body>
-</html>
+
+<!-- <p style="font-size:10px;color:red;">论坛主网址和备用网址的本月免费小时数均已用尽，将于7月1日恢复上线，欢迎访问BE4新闻站 <a href="https://be4news.pythonanywhere.com/" target="_blank">https://be4news.pythonanywhere.com/</a> .</p> -->
+<div id="main-content" class="row row-eq-height" style="min-height: 100vh">
+  <p>请选择NodeBE4论坛的两个地址之一:</p>
+  <ul>
+    <li>主网址 <a href="https://be4.herokuapp.com/">https://be4.herokuapp.com/</a>.</li>
+    <li>副网址 <a href="https://cf5.herokuapp.com/">https://cf5.herokuapp.com/</a>.</li>
+    <li>BE4新闻站 （新网址）<a href="https://be4news.pythonanywhere.com/">https://be4news.pythonanywhere.com/</a></li>
+    <li>BE4新闻站 （备份网址）<a href="https://be4-news.herokuapp.com/">https://be4-news.herokuapp.com/</a></li>
+    <li>观点：优秀UP主言论跟踪<a href="https://nodebe4.github.io/opinion">https://nodebe4.github.io/opinion</a> 短链接 <a href="https://git.io/JJCxS">https://git.io/JJCxS</a> </li>
+    <li>外媒报道<a href="https://nodebe4.github.io/waimei">https://nodebe4.github.io/waimei</a> 短链接 <a href="https://git.io/JJCxX">https://git.io/JJCxX</a> </li>
+    <li>社会：公民记者实拍<a href="https://nodebe4.github.io/society">https://nodebe4.github.io/society</a> 短链接 <a href="https://git.io/JUtSx">https://git.io/JUtSx</a> </li>
+    <li>英雄<a href="https://nodebe4.github.io/hero">https://nodebe4.github.io/hero</a> 短链接 <a href="https://git.io/JUt9v">https://git.io/JUt9v</a> </li>
+    <li>BE4新闻站-阅读器<a href="https://nodebe4.github.io/news">https://nodebe4.github.io/news</a> 短链接 <a href="https://git.io/JJCxH">https://git.io/JJCxH</a> </li>
+  </ul>
+  <p>短链接分享 <a href="https://git.io/JJCx0">https://git.io/JJCx0</a> </p>
+
+</div>
+
+<script type="text/javascript" >
+  const allsites = [
+    { 
+      'name': "Node",
+      'desc': "版主负责制的讨论区(主)",
+      "url":["https://be4.herokuapp.com/"],
+      "background-color": "#566573",
+      "col": 0
+    },
+    { 
+      'name': "Node",
+      'desc': "版主负责制的讨论区(副)",
+      "url":["https://cf5.herokuapp.com/"],
+      "background-color": "#7D9AAC",
+      "col": 0
+    },
+    {
+      'name': "新闻站",
+      'desc': "基于HackerNews算法排序的时事分享讨论区",
+      "url":["https://be4news.pythonanywhere.com/"],
+      "background-color": "#3498DB",
+      "col": 1
+    },
+    {
+      'name': "新闻站",
+      'desc': "阅读器",
+      "url":["https://nodebe4.github.io/news"],
+      "background-color": "#4AAEEC",
+      "col": 1
+    },
+    {
+      'name': "新闻站",
+      'desc': "备用网址",
+      "url":["https://be4-news.herokuapp.com/"],
+      "background-color": "#74BDEB",
+      "col": 1
+    },
+    { 
+      'name': '观点', 
+      'desc': "从草根到大师",
+      "url":["https://nodebe4.github.io/opinion","https://git.io/JJCxS"],
+      "background-color": "#2980B9",
+      "col": 2
+    },
+    { 
+      'name': '观点2', 
+      'desc': "观点高频版",
+      "url":["https://nodebe4.github.io/oped","https://git.io/JUJZT"],
+      "background-color": "#3A62BD",
+      "col": 2
+    },
+    {
+      'name': '外媒',
+      'desc': "主流中文媒体事实报道",
+      "url":["https://nodebe4.github.io/waimei","https://git.io/JJCxX"],
+      "background-color": "#5DADE2",
+      "col": 3
+    },
+    {
+      'name': '社会',
+      'desc': "民间记者到处拍",
+      "url":["https://nodebe4.github.io/society","https://git.io/JUtSx"],
+      "background-color": "#5499C7",
+      "col": 4
+    },
+    { 
+      'name':'英雄',
+      'desc': "铭记英雄、关注英雄",
+      "url":["https://nodebe4.github.io/hero","https://git.io/JUt9v"],
+      "background-color": "#8C7DAC",
+      "col": 5
+    }
+  ]
+
+  document.addEventListener("DOMContentLoaded", function(event){
+    var content = document.getElementById("main-content");
+    content.innerHTML = ''
+    var cols = []
+    for (i=0;i<6;i++){
+      cols[i] = document.createElement("div")
+      cols[i].classList.add("col-sm")
+      cols[i].classList.add('d-flex')
+      cols[i].classList.add('flex-column')
+      cols[i].classList.add('align-items-center')
+      cols[i].id = "col-"+i
+      cols[i].style.color='white'
+      cols[i].style.padding=0;
+      content.appendChild(cols[i])
+    }
+    allsites.map(item =>{
+      var col = item.col 
+      var div0 = document.createElement('div')
+      cols[col].appendChild(div0)
+      div0.classList.add('p-2')
+      div0.classList.add('flex-fill')
+      div0.classList.add('align-middle')
+      div0.style.width='100%'
+      div0.style.backgroundColor = item['background-color']
+      var a0 = document.createElement('a')
+      div0.appendChild(a0)
+      a0.href = item.url[0]
+      var div = document.createElement('div')
+      a0.appendChild(div)
+      var h1=document.createElement('h1')
+      h1.innerText = item['name']
+      var d = document.createElement('div')
+      d.innerText = item['desc']
+      div.appendChild(h1)
+      div.appendChild(d)
+      div.style.color='white'
+      div.style.width='100%'
+      div.style.height='100%'
+      // div.style.margin='auto'
+      div.style['text-align']='center'
+      // div.style['vertical-align']='middle'
+      div.classList.add('align-items-center')
+      // div.classList.add('p-2')
+      // div.classList.add('flex-fill')
+    })
+  })
+
+</script>
