@@ -45,6 +45,13 @@
       "name": "观点2", 
       "desc": "高频版(>4篇/周)",
       "url":["https://nodebe4.github.io/oped2","https://git.io/JUJZT"],
+      "background-color": "#4680C6",
+      "col": 2
+    },
+    { 
+      "name": "茶馆", 
+      "desc": "杂谈闲聊",
+      "url":["https://nodebe4.github.io/teahouse","https://git.io/JUlPE"],
       "background-color": "#4E8DBE",
       "col": 2
     },
