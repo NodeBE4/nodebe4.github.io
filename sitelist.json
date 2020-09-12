@@ -1,77 +1,77 @@
 [
     { 
-      'name': "Node",
-      'desc': "版主负责制的讨论区(主)",
+      "name": "Node",
+      "desc": "版主负责制的讨论区(主)",
       "url":["https://be4.herokuapp.com/"],
       "background-color": "#566573",
       "col": 0
     },
     { 
-      'name': "Node",
-      'desc': "版主负责制的讨论区(副)",
+      "name": "Node",
+      "desc": "版主负责制的讨论区(副)",
       "url":["https://cf5.herokuapp.com/"],
       "background-color": "#7D9AAC",
       "col": 0
     },
     {
-      'name': "时事版",
-      'desc': "基于HackerNews算法排序的时事分享讨论区",
+      "name": "时事版",
+      "desc": "基于HackerNews算法排序的时事分享讨论区",
       "url":["https://be4news.pythonanywhere.com/","https://tiny.cc/jjumsz"],
       "background-color": "#3498DB",
       "col": 1
     },
     {
-      'name': "Reader",
-      'desc': "离线版RSS阅读器",
+      "name": "Reader",
+      "desc": "离线版RSS阅读器",
       "url":["https://nodebe4.github.io/news","https://git.io/JJCxH"],
       "background-color": "#4AAEEC",
       "col": 1
     },
     {
-      'name': "时事版",
-      'desc': "备用网址",
+      "name": "时事版",
+      "desc": "备用网址",
       "url":["https://be4-news.herokuapp.com/"],
       "background-color": "#74BDEB",
       "col": 1
     },
     { 
-      'name': '观点', 
-      'desc': "从草根到大师",
+      "name": "观点", 
+      "desc": "从草根到大师",
       "url":["https://nodebe4.github.io/opinion","https://git.io/JJCxS"],
       "background-color": "#2980B9",
       "col": 2
     },
     { 
-      'name': '观点2', 
-      'desc': "高频版(>4篇/周)",
+      "name": "观点2", 
+      "desc": "高频版(>4篇/周)",
       "url":["https://nodebe4.github.io/oped2","https://git.io/JUJZT"],
       "background-color": "#4E8DBE",
       "col": 2
     },
     {
-      'name': '新闻',
-      'desc': "中文主流媒体报道",
+      "name": "新闻",
+      "desc": "中文主流媒体报道",
       "url":["https://nodebe4.github.io/waimei","https://git.io/JJCxX"],
       "background-color": "#5DADE2",
       "col": 3
     },
     {
-      'name': '社会',
-      'desc': "民间记者到处拍",
+      "name": "社会",
+      "desc": "民间记者到处拍",
       "url":["https://nodebe4.github.io/society","https://git.io/JUtSx"],
       "background-color": "#5499C7",
       "col": 4
     },
     { 
-      'name':'英雄',
-      'desc': "铭记英雄、关注英雄",
+      "name":"英雄",
+      "desc": "铭记英雄、关注英雄",
       "url":["https://nodebe4.github.io/hero","https://git.io/JUt9v"],
       "background-color": "#8C7DAC",
       "col": 5
     },
     { 
-      'name':'英雄',
-      'desc': "官方鏡像示例",
+      "name":"英雄",
+      "desc": "官方鏡像示例",
       "url":["https://hero-form.vercel.app/","https://hero-form.vercel.app/"],
       "background-color": "#8A65DE",
       "col": 5
