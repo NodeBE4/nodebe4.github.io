@@ -46,41 +46,41 @@
       "desc": "杂谈和对话类视频",
       "url":["https://nodebe4.github.io/teahouse","https://git.io/JUlPE"],
       "background-color": "#3498DB",
-      "col": 2
+      "col": 1
     },
     {
       "name": "新闻",
       "desc": "中文主流媒体报道",
       "url":["https://nodebe4.github.io/waimei","https://git.io/JJCxX"],
       "background-color": "#5DADE2",
-      "col": 3
+      "col": 2
     },
     {
       "name": "Reader",
       "desc": "离线版RSS阅读器",
       "url":["https://nodebe4.github.io/news","https://git.io/JJCxH"],
       "background-color": "#4AAEEC",
-      "col": 3
+      "col": 2
     },
     {
       "name": "社会",
       "desc": "民间记者到处拍",
       "url":["https://nodebe4.github.io/society","https://git.io/JUtSx"],
       "background-color": "#5499C7",
-      "col": 4
+      "col": 3
     },
     { 
       "name":"英雄",
       "desc": "铭记英雄、关注英雄",
       "url":["https://nodebe4.github.io/hero","https://git.io/JUt9v"],
       "background-color": "#8C7DAC",
-      "col": 5
+      "col": 4
     },
     { 
       "name":"英雄",
       "desc": "官方鏡像示例",
       "url":["https://hero-form.vercel.app/","https://hero-form.vercel.app/"],
       "background-color": "#9485B2",
-      "col": 5
+      "col": 4
     }
 ]

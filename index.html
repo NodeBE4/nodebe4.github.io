@@ -24,13 +24,25 @@ layout: default
 </div>
 
 <script type="text/javascript" >
+  const palettes = [
+    {"Rich Black FOGRA 29":"0d1321","Prussian Blue":"1d2d44","Black Coral":"3e5c76","Shadow Blue":"748cab","Eggshell":"f0ebd8"},
+    {"Aero Blue":"c4e7d4","Opal":"c4dacf","Periwinkle Crayola":"b9c0da","Heliotrope Gray":"998da0","Dark Liver":"63585e"},
+    {"Mindaro":"ddfcad","Yellow Green Crayola":"c8e087","Moss Green":"95a472","Artichoke":"82846d","Dim Gray":"646165"},
+    {"Turquoise Green":"b9e3c6","Ocean Green":"59c9a5","Ruby":"d81e5b","Prussian Blue":"23395b","Canary":"fffd98"},
+    {"Opera Mauve":"ac80a0","Little Boy Blue":"89aae6","Blue NCS":"3685b5","Honolulu Blue":"0471a6","Rich Black FOGRA 29":"061826"},
+    {"Vivid Burgundy":"a4243b","Ecru":"d8c99b","Harvest Gold":"d8973c","Alloy Orange":"bd632f","Charcoal":"273e47"},
+    {"Raisin Black":"242331","Cafe Noir":"533e2d","Golden Brown":"a27035","Camel":"b88b4a","Flax":"ddca7d"},
+    {"Rich Black FOGRA 29":"04151f","Rich Black":"183a37","Wheat":"efd6ac","Mahogany":"c44900","Dark Purple":"432534"},
+    {"Raisin Black":"171a21","Cadet":"617073","Shadow Blue":"7a93ac","Baby Blue Eyes":"92bcea","Maximum Blue Purple":"afb3f7"}
+  ]
   const url = "{{ site.url }}/sitelist.json"
 
   document.addEventListener("DOMContentLoaded", function(event){
     var content = document.getElementById("main-content");
     content.innerHTML = ''
+    var palette = Object.values(palettes[Math.floor(Math.random() * palettes.length)])
     var cols = []
-    for (i=0;i<6;i++){
+    for (i=0;i<palette.length;i++){
       cols[i] = document.createElement("div")
       cols[i].classList.add("col-sm")
       cols[i].classList.add('d-flex')
@@ -38,6 +50,7 @@ layout: default
       cols[i].classList.add('align-items-center')
       cols[i].id = "col-"+i
       cols[i].style.color='white'
+      cols[i].style.backgroundColor = "#"+palette[i]
       cols[i].style.padding=0;
       content.appendChild(cols[i])
     }
@@ -61,8 +74,11 @@ layout: default
         div0.classList.add('p-2')
         div0.classList.add('flex-fill')
         div0.classList.add('align-middle')
-        div0.style.width='100%'
-        div0.style.backgroundColor = item['background-color']
+        div0.style.width = '100%'
+        div0.style['border-width'] = '1px'
+        div0.style['border-color'] = invertColor(palette[col])
+        div0.style['border-style'] = 'dashed none none none'
+        // div0.style.backgroundColor = item['background-color']
         var a0 = document.createElement('a')
         div0.appendChild(a0)
         a0.href = item.url[0]
@@ -72,7 +88,7 @@ layout: default
         h1.innerText = item['name']
         var d = document.createElement('div')
         d.innerText = item['desc']
-        d.style.color = '#041231'
+        d.style.color = invertColor(palette[col])
         div.appendChild(h1)
         div.appendChild(d)
         // if (item.url[1]){
@@ -122,5 +138,30 @@ function test_alive(url){
       }
   });
   return divstatus
+}
+
+function invertColor(hex) {
+    if (hex.indexOf('#') === 0) {
+        hex = hex.slice(1);
+    }
+    // convert 3-digit hex to 6-digits.
+    if (hex.length === 3) {
+        hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+    }
+    if (hex.length !== 6) {
+        throw new Error('Invalid HEX color.');
+    }
+    // invert color components
+    var r = (255 - parseInt(hex.slice(0, 2), 16)).toString(16),
+        g = (255 - parseInt(hex.slice(2, 4), 16)).toString(16),
+        b = (255 - parseInt(hex.slice(4, 6), 16)).toString(16);
+    // pad each with zeros and return
+    return '#' + padZero(r) + padZero(g) + padZero(b);
+}
+
+function padZero(str, len) {
+    len = len || 2;
+    var zeros = new Array(len).join('0');
+    return (zeros + str).slice(-len);
 }
 </script>
