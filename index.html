@@ -114,6 +114,8 @@ function test_alive(url){
         divstatus.innerText = data.responseText;
         if (data.responseText.includes('502')){
           divstatus.style.color='#FBB7B7'
+          let grandparent = divstatus.parentNode.parentNode.parentNode
+          grandparent.parentNode.removeChild(grandparent)
         }else{
           divstatus.style.color='#B6FAC8'
         }
