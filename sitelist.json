@@ -17,42 +17,35 @@
       "name": "时事版",
       "desc": "基于HackerNews算法排序的时事分享讨论区",
       "url":["https://be4news.pythonanywhere.com/","https://tiny.cc/jjumsz"],
-      "background-color": "#3498DB",
-      "col": 1
-    },
-    {
-      "name": "Reader",
-      "desc": "离线版RSS阅读器",
-      "url":["https://nodebe4.github.io/news","https://git.io/JJCxH"],
-      "background-color": "#4AAEEC",
-      "col": 1
+      "background-color": "#74797E",
+      "col": 0
     },
     {
       "name": "时事版",
       "desc": "备用网址",
       "url":["https://be4-news.herokuapp.com/"],
       "background-color": "#74BDEB",
-      "col": 1
+      "col": 0
     },
     { 
       "name": "观点", 
       "desc": "从草根到大师",
       "url":["https://nodebe4.github.io/opinion","https://git.io/JJCxS"],
       "background-color": "#2980B9",
-      "col": 2
+      "col": 1
     },
     { 
       "name": "观点2", 
       "desc": "高频版(>4篇/周)",
       "url":["https://nodebe4.github.io/oped2","https://git.io/JUJZT"],
       "background-color": "#4680C6",
-      "col": 2
+      "col": 1
     },
     { 
       "name": "茶馆", 
-      "desc": "杂谈闲聊",
+      "desc": "杂谈和对话类视频",
       "url":["https://nodebe4.github.io/teahouse","https://git.io/JUlPE"],
-      "background-color": "#4E8DBE",
+      "background-color": "#3498DB",
       "col": 2
     },
     {
@@ -60,6 +53,13 @@
       "desc": "中文主流媒体报道",
       "url":["https://nodebe4.github.io/waimei","https://git.io/JJCxX"],
       "background-color": "#5DADE2",
+      "col": 3
+    },
+    {
+      "name": "Reader",
+      "desc": "离线版RSS阅读器",
+      "url":["https://nodebe4.github.io/news","https://git.io/JJCxH"],
+      "background-color": "#4AAEEC",
       "col": 3
     },
     {
@@ -80,7 +80,7 @@
       "name":"英雄",
       "desc": "官方鏡像示例",
       "url":["https://hero-form.vercel.app/","https://hero-form.vercel.app/"],
-      "background-color": "#8A65DE",
+      "background-color": "#9485B2",
       "col": 5
     }
 ]
