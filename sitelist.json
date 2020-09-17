@@ -84,7 +84,7 @@
       "col": 4
     },
     { 
-      "name":"開源影響力",
+      "name":"開源",
       "desc": "開源影響力項目",
       "url":["https://nodebe4.github.io/impact/","https://impact-form.vercel.app/"],
       "background-color": "#9485B2",
