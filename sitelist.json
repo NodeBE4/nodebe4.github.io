@@ -41,11 +41,11 @@
       "background-color": "#4680C6",
       "col": 1
     },
-    { 
-      "name": "茶馆", 
-      "desc": "杂谈和对话类视频",
-      "url":["https://nodebe4.github.io/teahouse","https://git.io/JUlPE"],
-      "background-color": "#3498DB",
+    {
+      "name": "民间历史",
+      "desc": "香港中文大学",
+      "url":["https://nodebe4.github.io/mjlsh","https://git.io/JUuk4"],
+      "background-color": "#5499C7",
       "col": 1
     },
     {
@@ -69,11 +69,18 @@
       "background-color": "#5499C7",
       "col": 3
     },
-    {
-      "name": "民间历史",
-      "desc": "香港中文大学",
-      "url":["https://nodebe4.github.io/mjlsh","https://git.io/JUuk4"],
-      "background-color": "#5499C7",
+    { 
+      "name": "茶馆", 
+      "desc": "杂谈和对话类视频",
+      "url":["https://nodebe4.github.io/teahouse","https://git.io/JUlPE"],
+      "background-color": "#3498DB",
+      "col": 3
+    },
+    { 
+      "name": "公众号", 
+      "desc": "被删公众号文章",
+      "url":["https://nodebe4.github.io/weixin","https://git.io/JUubN"],
+      "background-color": "#3498DB",
       "col": 3
     },
     { 
