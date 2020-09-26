@@ -1,7 +1,22 @@
 ---
 layout: default
 ---
+<style>
+body {
+  background-image: url('https://picsum.photos/1920/1080/?random');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
 
+a:hover{
+  text-decoration:none;
+  -webkit-transform: scale(1.2);  
+  font-weight:bold;
+}
+a:hover h1{
+  font-weight:bold;
+}
+</style>
 
 <!-- <p style="font-size:10px;color:red;">论坛主网址和备用网址的本月免费小时数均已用尽，将于7月1日恢复上线，欢迎访问BE4新闻站 <a href="https://be4news.pythonanywhere.com/" target="_blank">https://be4news.pythonanywhere.com/</a> .</p> -->
 <div id="main-content" class="row row-eq-height" style="min-height: 100vh">
@@ -41,6 +56,7 @@ layout: default
   document.addEventListener("DOMContentLoaded", function(event){
     var content = document.getElementById("main-content");
     content.innerHTML = ''
+    // content.style['background-image']= "url('https://picsum.photos/1280/960/?random')"
     var palette = Object.values(palettes[Math.floor(Math.random() * palettes.length)])
     var cols = []
     for (i=0;i<palette.length;i++){
@@ -51,6 +67,7 @@ layout: default
       cols[i].classList.add('align-items-center')
       cols[i].id = "col-"+i
       cols[i].style.color='white'
+      cols[i].style.opacity = 0.85
       cols[i].style.backgroundColor = "#"+palette[i]
       cols[i].style.padding=0;
       content.appendChild(cols[i])
@@ -84,6 +101,10 @@ layout: default
         var a0 = document.createElement('a')
         div0.appendChild(a0)
         a0.href = item.url[0]
+        // var img = document.createElement('img')
+        // img.src = 'https://picsum.photos/600/700/?random'
+        // img.classList.add('img-fluid')
+        // a0.appendChild(img)
         var div = document.createElement('div')
         a0.appendChild(div)
         var h1=document.createElement('h1')
