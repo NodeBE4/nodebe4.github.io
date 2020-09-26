@@ -20,7 +20,7 @@ a:hover h1{
 </style>
 
 <!-- <p style="font-size:10px;color:red;">论坛主网址和备用网址的本月免费小时数均已用尽，将于7月1日恢复上线，欢迎访问BE4新闻站 <a href="https://be4news.pythonanywhere.com/" target="_blank">https://be4news.pythonanywhere.com/</a> .</p> -->
-<div id="main-content" class="row row-eq-height" style="min-height: 100vh">
+<div id="main-content" class="row row-eq-height" style="min-height: 100vh;">
   <p>请选择NodeBE4论坛的两个地址之一:</p>
   <div class="col-12">
     <ul>
@@ -40,6 +40,10 @@ a:hover h1{
 </div>
 
 <script type="text/javascript" >
+  // setTimeout(function(){ 
+  //   var content = document.getElementById("main-content");
+  //   content.style['background-image']= "url('https://picsum.photos/1920/1080/?random');"
+  // }, 10000);
   // https://coolors.co/
   const palettes = [
     {"Rich Black FOGRA 29":"0d1321","Prussian Blue":"1d2d44","Black Coral":"3e5c76","Shadow Blue":"748cab","Eggshell":"f0ebd8"},
@@ -57,7 +61,6 @@ a:hover h1{
   document.addEventListener("DOMContentLoaded", function(event){
     var content = document.getElementById("main-content");
     content.innerHTML = ''
-    // content.style['background-image']= "url('https://picsum.photos/1280/960/?random')"
     var palette = Object.values(palettes[Math.floor(Math.random() * palettes.length)])
     var cols = []
     for (i=0;i<palette.length;i++){
@@ -68,7 +71,7 @@ a:hover h1{
       cols[i].classList.add('align-items-center')
       cols[i].id = "col-"+i
       cols[i].style.color='white'
-      // cols[i].style.opacity = 0.85
+      // cols[i].style['background-image']= `url('https://picsum.photos/500/108${i}/?random');`
       cols[i].style.backgroundColor = "#"+palette[i]+"CC"
       cols[i].style.padding=0;
       content.appendChild(cols[i])
