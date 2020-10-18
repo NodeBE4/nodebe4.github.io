@@ -21,6 +21,13 @@
       "col": 0
     },
     {
+      "name": "a bbs",
+      "desc": "公共空间抢救小组",
+      "url":["https://github.com/co-memory/bbs/issues/"],
+      "background-color": "#74BDEB",
+      "col": 0
+    },
+    {
       "name": "时事版",
       "desc": "备用网址",
       "url":["https://be4-news.herokuapp.com/"],
