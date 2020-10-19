@@ -27,6 +27,13 @@
       "background-color": "#74BDEB",
       "col": 0
     },
+    {
+      "name": "时事版",
+      "desc": "备用网址",
+      "url":["https://be4-news.herokuapp.com/"],
+      "background-color": "#74BDEB",
+      "col": 0
+    },
     { 
       "name": "观点", 
       "desc": "从草根到大师",
