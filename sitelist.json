@@ -56,6 +56,13 @@
       "col": 2
     },
     {
+      "name": "共识网",
+      "desc": "共识网存档索引",
+      "url":["https://nodebe4.github.io/21ccom","https://git.io/JLSg1"],
+      "background-color": "#4AAEEC",
+      "col": 2
+    },
+    {
       "name": "Reader",
       "desc": "离线版RSS阅读器",
       "url":["https://nodebe4.github.io/news","https://git.io/JJCxH"],
