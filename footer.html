@@ -37,3 +37,32 @@
 | <a href="https://2049post.wordpress.com/">火光</a> 
 | <a href="https://chinatimeline.github.io/">时代透镜</a> 
 </div>
+
+<script>
+// add to global footer admin/extend/widgets
+$(window).on('action:ajaxify.end', function(event, data) {
+	console.log(data);  // to inspect what is passed back by NodeBB
+	require(['forum/footer']);
+	
+	if (data['tpl_url']=='recent'){
+		const hidden_categories = ["5","12","14"];
+		var ul = document.getElementsByClassName("topic-list")[0];
+		var lis = ul.getElementsByClassName("category-item");
+		var del_list = []
+		for (i=0;i<lis.length;i++){
+			var li = lis[i];
+			if (hidden_categories.includes(li.dataset["cid"])){
+				del_list.push(li)
+			}
+			console.log(li.dataset['cid']);
+		}
+		while (del_list.length > 0){
+			var li = del_list.pop()
+			var h2 = li.getElementsByTagName("h2")[0];
+		    console.log("hide: "+h2.innerText)
+			li.parentNode.removeChild(li);
+		}
+
+	}
+});
+</script>
