@@ -21,9 +21,9 @@
       "col": 0
     },
     {
-      "name": "a bbs",
+      "name": "讨论区",
       "desc": "公共空间抢救小组",
-      "url":["https://github.com/co-memory/bbs/issues/"],
+      "url":["https://github.com/co-memory/bbs/discussions"],
       "background-color": "#74BDEB",
       "col": 0
     },
