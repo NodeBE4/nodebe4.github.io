@@ -1,45 +1,28 @@
-<!-- NodeBE4页脚友情链接 -->
+<footer id="footer" class="container footer">
 
-<div id="friendly-links" style="max-width: 550px; margin: auto;">
-<table class="equalDivide" cellpadding="0" cellspacing="0" width="100%" border="0">
-	<tbody>
-    <tr>
-      <th style="text-align: center; vertical-align: middle;">本站扩展</th>
-      <th style="text-align: center; vertical-align: middle;">友情链接</th>
-    </tr>
-		<tr>
-			<td><a href="https://nodebe4.github.io/opinion">观点：从草根到大师</a> </td>
-			<td><a href="https://xsden.info/">XsDen：粤语论坛</a> </td>
-		</tr>
-    <tr>
-			<td><a href="https://nodebe4.github.io/waimei">外媒：全球实时新闻</a> </td>
-			<td><a href="http://terminusnemheqvy.onion">2047: Tor上重建的2049bbs</a> </td>
-		</tr>
-		<tr>
-			<td><a href="https://be4news.pythonanywhere.com/">BE4新闻站：本站时事版</a> </td>
-			<td><a href="https://chinatimeline.github.io/">时代透镜：新闻的可视化记录</a> </td>
-		</tr>
-		<tr>
-			<td><a href="https://nodebe4.github.io/hero">英雄：他們值得銘記</a> </td>
-			<td><a href="https://2049post.wordpress.com/">火光:2049论坛报</a> </td>
-		</tr>
-	</tbody>
-</table>
-</div>
-
-<div id="friendly-links" style="max-width: 550px; margin: auto;">
+<div id="friendly-links" style="max-width: 750px; margin: auto;">
 <a href="https://nodebe4.github.io/opinion">观点</a> 
 | <a href="https://nodebe4.github.io/waimei">外媒</a> 
-| <a href="https://be4news.pythonanywhere.com/">时事版</a> 
 | <a href="https://nodebe4.github.io/hero">英雄</a>
+| <a href="https://nodebe4.github.io/21ccom/">共识网</a>
+| <a href="https://nodebe4.github.io/mjlsh/">民间历史</a>
+| <a href="https://nodebe4.github.io/teahouse/">茶馆</a>
 | <a href="https://xsden.info/">XsDen</a> 
-| <a href="http://terminusnemheqvy.onion">2047</a> 
-| <a href="https://2049post.wordpress.com/">火光</a> 
+| <a href="https://yibaochina.com/">议报</a> 
+| <a href="https://headsalon.org/">海德沙龙</a> 
+| <a href="https://old.reddit.com/r/cltv/">查理TV</a> 
+| <a href="https://old.reddit.com/r/china_irl/">China_irl</a> 
+| <a href="https://terminus2049.github.io/1984bbs/">1984bbs</a> 
 | <a href="https://chinatimeline.github.io/">时代透镜</a> 
+| <a href="https://program-think.blogspot.com/">编程随想</a> 
 </div>
 
+	<div>
+		本站由开源 <a target="_blank" href="https://nodebb.org">NodeBB</a>创建 | <a target="_blank" href="//github.com/NodeBB/NodeBB/graphs/contributors">Contributors</a>
+	</div>
+
+</footer>
 <script>
-// add to global footer admin/extend/widgets
 $(window).on('action:ajaxify.end', function(event, data) {
 	console.log(data);  // to inspect what is passed back by NodeBB
 	require(['forum/footer']);
@@ -65,4 +48,5 @@ $(window).on('action:ajaxify.end', function(event, data) {
 
 	}
 });
+
 </script>
