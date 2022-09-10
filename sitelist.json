@@ -124,5 +124,12 @@
       "url":["https://nodebe4.github.io/impact/","https://impact-form.vercel.app/"],
       "background-color": "#9485B2",
       "col": 4
+    },
+      { 
+      "name":"松鼠公益(券券松鼠)",
+      "desc": "我们利用CPS模式盈利、盈利金额用于支持腾讯公益项目",
+      "url":["https://github.com/PSC-F/Tencent-s-99-public-service-day-coupons-coupons-squirrel"],
+      "background-color": "#9485B2",
+      "col": 4
     }
 ]
